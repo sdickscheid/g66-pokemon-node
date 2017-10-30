@@ -71,7 +71,7 @@ __You should git add, commit, push, and deploy to Heroku after each story is com
 
 ### Pokemón and Pokemón CRUD
 
-__#1__
+__#1__DONE
 
 ```
 As a user
@@ -79,7 +79,7 @@ When I go to the root route '/'
 Then I am redirected to `/pokemon`
 ```
 
-__#2__
+__#2__DONE
 
 ```
 As a user
@@ -87,14 +87,14 @@ When I visit /pokemon
 Then I see a button to 'Add a New Pokemon'
 ```
 
-__#3__
+__#3__DONE
 
 ```
 When I click the 'Add a New Pokemon' button
 Then I see a form to add a new Pokemon
 ```
 
-__#4__
+__#4__DONE
 
 ```
 When I submit the form to add a new Pokemon
@@ -102,7 +102,7 @@ Then I am redirected to the Pokemon home page
 And I see my new Pokemon listed
 ```
 
-__#5__
+__#5__DONE
 
 ```
 When I visit '/pokemon'
@@ -111,7 +111,7 @@ And I see a link to DELETE
 And I see a link to EDIT
 ```
 
-__#6__
+__#6__DONE
 
 ```
 When I visit the Pokemón home page
@@ -138,7 +138,7 @@ And I see the name of that Pokemón's trainer
 And that name is in a drop down menu that also has the names of all the other trainers
 ```
 
-__#8__
+__#8__DONE
 
 ```
 When I submit an edit form for a Pokemón
@@ -146,7 +146,7 @@ Then I am redirected to the show page for that Pokemón
 And I see all new details for my updated Pokemón
 ```
 
-__#9__
+__#9__DONE
 
 ```
 When I visit the Pokemón home page
@@ -205,7 +205,7 @@ And I do NOT see a link 'assign to gym' next to that Pokemón
 
 ### Trainers
 
-__#1__
+__#1__DONE
 
 ```
 As a user
@@ -213,7 +213,7 @@ When I visit /trainers
 Then I see a list of all Trainers
 ```
 
-__#2__
+__#2__DONE
 
 ```
 When I click on the name of a Trainer

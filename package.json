@@ -14,5 +14,18 @@
     "express-session": "^1.15.6",
     "knex": "^0.13.0",
     "pg": "^7.3.0"
-  }
+  },
+  "description": "![](https://github.com/gSchool/pokemon-node/blob/master/public/images/pokemon-logo.png)",
+  "main": "knexfile.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdickscheid/g66-pokemon-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sdickscheid/g66-pokemon-node/issues"
+  },
+  "homepage": "https://github.com/sdickscheid/g66-pokemon-node#readme"
 }

@@ -1,0 +1,59 @@
+<% include ./partials/header %>
+
+    <div class="container">
+      <div class="row header-tag">
+        <h4>Edit Pokemon</h4>
+      </div>
+
+      <div class="row">
+        <form class="col s12 form" action="/update/<%= poke.id %>" method="post">
+          <div class="row top-row">
+            <div class="input-field col s12">
+              <input placeholder="add name" id="name" type="text" class="validate" name="name" value="<%= poke.name %>">
+              <label id="label" class="active" for="name">Pokemon Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <select>
+                <option value="<%= trainer[0].id %>"><%= trainer[0].name %></option>
+                <% for(var i=1; i<trainer.length; i++) { %>
+                <option value="<%= trainer[i].id %>"><%= trainer[i].name %></option>
+                <% } %>
+              </select>
+              <label id="label" for="trainer_name">My Trainer</label>
+            </div>
+
+            <div class="input-field col s6">
+              <input placeholder="add trainer id" id="trainer_is" type="number" class="validate" name="trainer_id" value="<%= poke.trainer_id %>">
+              <label id="label" class="active" for="trainer_id">Trainer ID</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input placeholder="true or false?" id="in_gym" type="text" class="validate" name="in_gym" value="<%= poke.in_gym %>">
+              <label id="label" class="active" for="in_gym">In Gym</label>
+            </div>
+
+            <div class="row input-field col s6">
+              <input placeholder="add combat power" id="cp" type="number" class="validate" name="cp" value="<%= poke.cp %>">
+              <label id="label" for="cp">Combat Power</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="create-poke-id" class="waves-effect waves-light btn edit-pokemon-btn" type="submit" value="Edit Pokemon">
+            </div>
+          </div>
+          </div>
+        </form>
+      </div>
+
+    <!-- End container -->
+    </div>
+
+<!-- START FOOTER -->
+<% include ./partials/footer %>

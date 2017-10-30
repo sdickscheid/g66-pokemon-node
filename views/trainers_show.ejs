@@ -1,0 +1,30 @@
+<% include ./partials/header %>
+
+    <div class="container">
+      <div class="row header-tag">
+        <h4>Trainer: <%= trainerSingle.name %></h4>
+      </div>
+
+      <div class="row col s12">
+        <table id="table" class="bordered col s6">
+          <thead class="thead-color white-text">
+            <tr>
+                <th>Pokemon in Training</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for(var i=0; i<students.length; i++) { %>
+            <tr>
+              <td><%= students[i].name %></td>
+            </tr>
+            <% } %>
+          </tbody>
+        </table>
+      </div>
+
+
+    <!-- End container -->
+    </div>
+
+<!-- START FOOTER -->
+<% include ./partials/footer %>

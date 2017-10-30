@@ -1,0 +1,53 @@
+<% include ./partials/header %>
+
+    <div class="container">
+      <div class="row header-tag">
+        <h4>Create a New Pokemon</h4>
+      </div>
+
+      <div class="row">
+        <form class="col s6 form" action="/pokemon/create" method="post">
+
+          <div class="row top-row">
+            <div class="input-field col s12">
+              <input placeholder="add name" id="name" type="text" class="validate" name="name">
+              <label id="label" class="active" for="name">Pokemon Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input placeholder="true or false?" id="in_gym" type="text" class="validate" name="in_gym">
+              <label id="label" class="active" for="in_gym">Gym Status</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field row col s12">
+              <input placeholder="add trainer id" id="trainer_is" type="number" class="validate" name="trainer_id">
+              <label id="label" class="active" for="trainer_id">Assign Trainer ID</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field row col s12">
+              <input placeholder="add combat power" id="cp" type="number" class="validate" name="cp">
+              <label id="label" class="active"for="cp">Combat Power (CP)</label>
+            </div>
+          </div>
+
+
+
+            <div class="input-field row col s12">
+              <input id="create-poke-id" type="submit" class="validate waves-effect waves-light btn add-pokemon-btn" value="Submit New Pokemon">
+            </div>
+          </div>
+
+
+        </form>
+      </div>
+
+    <!-- End container -->
+    </div>
+
+<!-- START FOOTER -->
+<% include ./partials/footer %>

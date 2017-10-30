@@ -1,0 +1,97 @@
+/* global settings */
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+.row {
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav-bar {
+  height: 7em;
+}
+
+.nav-wrapper {
+  background-color: #9b3319;
+}
+
+.brand-logo {
+  margin-top: 15px;
+}
+
+.background-color-main {
+  background-color: #d26242
+}
+
+.header-tag {
+  margin-top: 25px;
+  color: white;
+  font-family: "Trebuchet MS";
+}
+
+#table {
+  border: 15px solid #9b3319;
+  background-color: #d26242;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.thead-color {
+  background-color: #9b3319;
+}
+
+.tbody-image {
+  background-image: url('/images/ball_background_opaque.png');
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*opacity: 0.5;*/
+}
+
+.form {
+  background-color: #d26242;
+  border: 15px solid #9b3319;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.top-row {
+  margin-top: 10px;
+}
+
+#label {
+  color: black;
+  font-size: 1.3em;
+}
+
+.page-footer {
+  background-color: #ff926e;
+}
+
+a {
+  color: #0fb7ff;
+}
+
+.add-pokemon-btn {
+  margin-bottom: 2em;
+  width: 100%;
+  height: 3em;
+  background-color: #7b7b7b;
+}
+.add-pokemon-btn:hover {
+  background-color: #aaaaaa;
+}
+
+.edit-pokemon-btn {
+  margin-bottom: 1em;
+  width: 100%;
+  height: 3em;
+  background-color: #7b7b7b;
+}
+.edit-pokemon-btn:hover {
+  background-color: #aaaaaa;
+}

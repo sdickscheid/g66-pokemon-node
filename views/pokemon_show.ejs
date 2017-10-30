@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pokemon Home</title>
+    <script src="https://use.fontawesome.com/71f27b38fa.js"></script>
+  	<!-- Compiled and minified CSS -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<link rel="stylesheet" href="/css/style.css">
+  </head>
+
+  <body class="background-color-main">
+    <nav class="nav-bar">
+      <div class="nav-wrapper">
+        <a href="/pokemon" class="brand-logo center">
+          <img src="./images/pokemon-logo.png" alt="Pokemon Logo">
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="/pokemon">Show Pokemon</a></li>
+          <li><a href="/trainers">Show Trainers</a></li>
+          <li><a href="/gym">Enter Gym</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row header-tag">
+        <h4>Pokemon Details</h4>
+      </div>
+
+      <div class="row">
+        <table id="table" class="bordered">
+          <thead class="thead-color white-text">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Trainer ID</th>
+                <th>Trainer Name</th>
+                <th>CP</th>
+                <th>In Gym</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><%= pokeSingle.id %></td>
+              <td><%= pokeSingle.name %></td>
+              <td><%= pokeSingle.trainer_id %></td>
+              <td><%= trainer.name %></td>
+              <td><%= pokeSingle.cp %></td>
+              <td><%= pokeSingle.in_gym %></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+    <!-- End container -->
+    </div>
+
+<!-- START FOOTER -->
+<% include ./partials/footer %>

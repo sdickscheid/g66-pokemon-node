@@ -1,0 +1,51 @@
+<% include ./partials/header %>
+  <div class="">
+
+
+    <div class="container background-image">
+      <div class="row header-tag">
+        <h4>Pokemon Crew</h4>
+      </div>
+
+      <div class="row">
+        <table id="table" class="z-depth-3">
+          <thead class="thead-color white-text">
+            <tr class="table-rows">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Trainer ID</th>
+                <th>CP</th>
+                <th>In Gym</th>
+                <th>Action</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody class="tbody tbody-image tbody-color white-text">
+            <% for(let i=0; i<poke.length; i++){ %>
+            <tr class="table-rows">
+              <td><%= poke[i].id %></td>
+              <td><a href="/show/<%= poke[i].id %>"><%= poke[i].name %></a></td>
+              <td><%= poke[i].trainer_id %></td>
+              <td><%= poke[i].cp %></td>
+              <td><%= poke[i].in_gym %></td>
+              <td><a href="#">Assign to gym</a></td>
+              <td><a href="/editPage/<%=poke[i].id%>"><i class="material-icons">edit</i></a></td>
+              <td><a href="/pokemon/delete/<%=poke[i].id%>"><i class="material-icons">delete_forever</i></a></td>
+            </tr>
+            <%  } %>
+          </tbody>
+        </table>
+      </div>
+      <div class="row">
+        <div class="add-pokemon">
+          <a href="http://localhost:8000/pokemon/create" class="waves-effect waves-light btn add-pokemon-btn" action="/pokemon_create" method="get">Add a New Pokemon</a>
+        </div>
+      </div>
+
+
+    <!-- End container -->
+    </div>
+  </div>
+<!-- START FOOTER -->
+<% include ./partials/footer %>

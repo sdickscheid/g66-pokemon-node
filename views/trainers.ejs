@@ -1,0 +1,35 @@
+<% include ./partials/header %>
+
+    <div class="container">
+      <div class="row header-tag">
+        <h4>Pokemon Trainers</h4>
+      </div>
+
+      <div class="row">
+        <table id="table" class="bordered col s6">
+          <thead class="thead-color white-text">
+            <tr>
+                <th>Trainer ID</th>
+                <th>Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for(let i=0; i<trainers.length; i++){ %>
+            <tr>
+              <td><%= trainers[i].id %></td>
+              <!-- <td><%= trainers[i].name %></td> -->
+              <td>
+                <a href="/show/trainer/<%= trainers[i].id %>"><%= trainers[i].name %></a>
+              </td>
+            </tr>
+            <%  } %>
+          </tbody>
+        </table>
+      </div>
+
+
+    <!-- End container -->
+    </div>
+
+<!-- START FOOTER -->
+<% include ./partials/footer %>
